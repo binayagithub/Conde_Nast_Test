@@ -2,7 +2,7 @@ Deploy a cluster of EC2 Instances in an Auto Scaling Group (ASG) and an Elastic 
 
 
 Quick start
-Note: These examples deploy resources into your AWS account. Although all the resources should fall under the AWS Free Tier, it is not our responsibility if you are charged money for this.
+Note: These examples deploy resources into your AWS account. 
 
 Install Terraform.
 Set your AWS credentials as the environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY.
@@ -11,3 +11,9 @@ Run terraform init.
 Run terraform apply.
 After it's done deploying, the example will output URLs or IPs you can try out.
 To clean up and delete all resources after you're done, run terraform destroy.
+
+
+curl http://<EC2_INSTANCE_PUBLIC_IP>:8080
+Hello, World
+
+Note: In-order to link root url as display 'Hello World, we can implement route53 DNS to have something like www.Helloworld.com 
